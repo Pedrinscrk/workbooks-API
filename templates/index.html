@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Planilhas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizador de Planilhas</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="folder">Selecione as planilhas (pasta):</label>
+            <input type="file" name="folder" multiple required>
+
+            <label for="regras">Regras de organização:</label>
+            <textarea name="regras" placeholder="Ex: CNPJ, Loja, Funcionário" required></textarea>
+
+            <button type="submit">Organizar Planilhas</button>
+        </form>
+    </div>
+</body>
+</html>
